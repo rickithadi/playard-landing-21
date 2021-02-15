@@ -13,7 +13,13 @@
             Blog
           </nuxt-link>
         </li>
+        <li>
+          <nuxt-link to="/contact" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
+            Contact
+          </nuxt-link>
+        </li>
 
+ 
         <li
           v-for="(page, index) in pages"
           :key="index"
