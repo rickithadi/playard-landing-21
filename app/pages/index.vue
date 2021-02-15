@@ -196,16 +196,16 @@
       <div class="p-8">
         <img src="@/assets/Frame1.png" alt="screenshot" class="float-right md:float-left" />
         <p
-          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl"
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl leading-loose"
           style="padding-top: 20%;"
         >
           Select from a curated range of Sports
         </p>
       </div>
       <div class="p-8">
-        <img src="@/assets/Frame2.png" alt="screenshot" class="float-left md:float-left" />
+        <img src="@/assets/Frame2.png" alt="screenshot" class="float-left md:float-right" />
         <p
-          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl"
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl leading-loose"
           style="padding-top: 20%;"
         >
           Search for a game according to your preferences
@@ -215,7 +215,7 @@
       <div class="p-8">
         <img src="@/assets/Frame3.png" alt="screenshot" class="float-right md:float-left" />
         <p
-          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl"
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl leading-loose"
           style="padding-top: 20%;"
         >
           View potential opponents in the pre game Lobby
