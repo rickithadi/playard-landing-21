@@ -1,14 +1,6 @@
-template>
+<template>
   <div class="page-transition--biker">
-    <div
-      v-for="index in 5"
-      :key="index"
-      :class="`biker-${index}`"
-      class="biker">
-      <Lottie
-        :options="bikerAnimation"
-        class="_animation" />
-    </div>
+    <Lottie :options="bikerAnimation" class="_animation" />
   </div>
 </template>
 
