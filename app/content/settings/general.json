@@ -1,8 +1,8 @@
 {
-  "title": "Playard",
+  "title": "Home",
   "titleTemplate": "| Playard",
   "welcomeText": "# Playard\n\nWhere you find sports kakis",
-  "logo": "/images/uploads/playard.jpg",
+  "logo": "/images/uploads/playardpenguin.png",
   "icon": "/images/uploads/playardpenguin.png",
   "loadingColor": "#0b3765",
   "seoDescription": "Playard is where you find sports kakis",
