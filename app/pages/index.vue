@@ -29,7 +29,7 @@
                 class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded"
                 type="submit"
               >
-                Indicate Interest
+                I'm keen
               </button>
             </form>
           </div>
@@ -83,11 +83,11 @@
               </div>
               <div class="ml-4">
                 <dt class="text-lg leading-6 font-medium text-gray-900">
-                  Competitive exchange rates
+                  Connect to a global network of like minded players
                 </dt>
                 <dd class="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-                  perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                  Join a community of social sportsmen from all over the world. Compete, befriend
+                  and connect.
                 </dd>
               </div>
             </div>
@@ -118,8 +118,8 @@
               <div class="ml-4">
                 <dt class="text-lg leading-6 font-medium text-gray-900">No hidden fees</dt>
                 <dd class="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-                  perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                  Our transparent fee structure combined with a freemium model ensures you never get
+                  blindsided and ensures a fair playing model.
                 </dd>
               </div>
             </div>
@@ -148,10 +148,10 @@
                 </div>
               </div>
               <div class="ml-4">
-                <dt class="text-lg leading-6 font-medium text-gray-900">Transfers are instant</dt>
+                <dt class="text-lg leading-6 font-medium text-gray-900">Find games instantly</dt>
                 <dd class="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-                  perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                  Harness the power of modern tech to solve the age old problem of finding suitable
+                  sports kakis.
                 </dd>
               </div>
             </div>
@@ -182,8 +182,8 @@
               <div class="ml-4">
                 <dt class="text-lg leading-6 font-medium text-gray-900">Mobile notifications</dt>
                 <dd class="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-                  perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                  Use playard anywhere. Mobile, desktop or tablet you receive updates anywhere
+                  anytime.
                 </dd>
               </div>
             </div>
@@ -194,7 +194,12 @@
 
     <div class="grid grid-flow-row auto-rows-max md:auto-rows-min">
       <div class="p-8">
-        <img src="@/assets/Frame1.png" alt="screenshot" class="float-right md:float-left" />
+        <img
+          src="@/assets/Frame1.png"
+          alt="screenshot"
+          class="float-right md:float-left"
+          style="height: 70vh; width: auto;"
+        />
         <p
           class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl leading-loose"
           style="padding-top: 20%;"
@@ -203,7 +208,12 @@
         </p>
       </div>
       <div class="p-8">
-        <img src="@/assets/Frame2.png" alt="screenshot" class="float-left md:float-right" />
+        <img
+          src="@/assets/Frame2.png"
+          alt="screenshot"
+          class="float-left md:float-right"
+          style="height: 70vh; width: auto;"
+        />
         <p
           class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl leading-loose"
           style="padding-top: 20%;"
@@ -213,7 +223,12 @@
       </div>
 
       <div class="p-8">
-        <img src="@/assets/Frame3.png" alt="screenshot" class="float-right md:float-left" />
+        <img
+          src="@/assets/Frame3.png"
+          alt="screenshot"
+          class="float-right md:float-left"
+          style="height: 70vh; width: auto;"
+        />
         <p
           class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl leading-loose"
           style="padding-top: 20%;"
