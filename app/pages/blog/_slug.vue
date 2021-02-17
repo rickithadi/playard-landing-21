@@ -8,9 +8,8 @@
 
     <div v-html="$md.render(post.content)" class="post__content markdown pt-4 md:pt-6 md:pb-24" />
     <ShareNetwork
-      style="border: 3px;"
       network="facebook"
-      :url="`https://playard.sg/blog/${post.slug}`"
+      url="`https://playard.sg/blog/${post.slug}`"
       title="post.title"
       description="post.seoDescription"
       quote="post.seoDescription"
