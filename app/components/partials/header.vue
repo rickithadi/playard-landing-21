@@ -2,7 +2,7 @@
   <header class="flex items-center py-4 md:py-8">
     <div class="header__logo">
       <nuxt-link to="/">
-        <img :src="logo" alt="Logo" />
+        <img :src="logo" alt="Logo" style="height: 50px; width: 50px;" />
       </nuxt-link>
     </div>
 
