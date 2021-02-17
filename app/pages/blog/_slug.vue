@@ -16,7 +16,11 @@
       quote="post.seoDescription"
       hashtags="playard,sport,social"
     >
-      <img src="@/assets/fb.svg" alt="share on facebook" style="width: 100px; height: 100px;" />
+      <img
+        src="@/assets/fb.svg"
+        alt="share on facebook"
+        style="width: 50px; height: 50px; bottom: 0;"
+      />
       Share on Facebook
     </ShareNetwork>
   </article>
