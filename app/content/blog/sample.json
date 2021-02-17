@@ -1,7 +1,7 @@
 {
   "publishedAt": "16th Feb 2021",
   "title": "sample",
+  "featuredImage": "http://192.168.1.30:3000/images/uploads/playardpenguin.png",
   "content": "this is info about basketball in singapore\n\n\n\n![guy](/images/uploads/playard.jpg \"playard\")",
-  "featuredImage": "/images/uploads/81464027_471079400471586_3271125514441457664_n.jpg",
   "seoDescription": "tags and stuff"
 }

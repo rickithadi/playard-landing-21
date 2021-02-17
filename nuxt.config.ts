@@ -59,7 +59,7 @@ const nuxtConfig: Configuration = {
     subFolders: false,
 
     routes: [
-      ...fg.sync(['./app/content/blog/**.json', './app/content/pages/**.json']).map(url => ({
+      ...fg.sync(['./app/content/blog/**.json', './app/content/pages/**.json']).map((url) => ({
         route: url.replace(/^.\/app\/content(\/pages)?|.json$/gi, ''),
         payload: require(url),
       })),
@@ -74,8 +74,12 @@ const nuxtConfig: Configuration = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/markdownit'],
-
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources',
+    '@nuxtjs/markdownit',
+    'vue-social-sharing/nuxt',
+  ],
 
   markdownit: {
     preset: 'default',

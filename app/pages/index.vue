@@ -50,18 +50,18 @@
             Come join the revolution
           </h2>
           <p
-            class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+            class="py-1 mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
           >
             The social sport platform for the 21st century
           </p>
-          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <p class="py-1 mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             Playard is a modern solution to an age old problem
           </p>
         </div>
 
-        <div class="mt-10">
+        <div class="mt-5">
           <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-            <div class="flex">
+            <div class="py-5 flex mt-0">
               <div class="flex-shrink-0">
                 <div
                   class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
@@ -88,14 +88,14 @@
                 <dt class="text-lg leading-6 font-medium text-gray-900">
                   Connect to a global network of like minded players
                 </dt>
-                <dd class="mt-2 text-base text-gray-500">
+                <dd class="mt-1 text-base text-gray-500">
                   Join a community of social sportsmen from all over the world. Compete, befriend
                   and connect.
                 </dd>
               </div>
             </div>
 
-            <div class="flex">
+            <div class="py-5 flex mt-0">
               <div class="flex-shrink-0">
                 <div
                   class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
@@ -120,14 +120,14 @@
               </div>
               <div class="ml-4">
                 <dt class="text-lg leading-6 font-medium text-gray-900">No hidden fees</dt>
-                <dd class="mt-2 text-base text-gray-500">
+                <dd class="mt-1 text-base text-gray-500">
                   Our transparent fee structure combined with a freemium model ensures you never get
                   blindsided and ensures a fair playing model.
                 </dd>
               </div>
             </div>
 
-            <div class="flex">
+            <div class="py-5 flex mt-0">
               <div class="flex-shrink-0">
                 <div
                   class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
@@ -152,14 +152,14 @@
               </div>
               <div class="ml-4">
                 <dt class="text-lg leading-6 font-medium text-gray-900">Find games instantly</dt>
-                <dd class="mt-2 text-base text-gray-500">
+                <dd class="mt-1 text-base text-gray-500">
                   Harness the power of modern tech to solve the age old problem of finding suitable
                   sports kakis.
                 </dd>
               </div>
             </div>
 
-            <div class="flex">
+            <div class="py-5 flex mt-0">
               <div class="flex-shrink-0">
                 <div
                   class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
@@ -184,7 +184,7 @@
               </div>
               <div class="ml-4">
                 <dt class="text-lg leading-6 font-medium text-gray-900">Mobile notifications</dt>
-                <dd class="mt-2 text-base text-gray-500">
+                <dd class="mt-1 text-base text-gray-500">
                   Use playard anywhere. Mobile, desktop or tablet you receive updates anywhere
                   anytime.
                 </dd>
@@ -237,6 +237,20 @@
           style="padding-top: 20%;"
         >
           View potential opponents in the pre game Lobby
+        </p>
+      </div>
+      <div class="p-8">
+        <img
+          src="@/assets/Frame4.png"
+          alt="screenshot"
+          class="float-left md:float-right"
+          style="height: 70vh; width: auto;"
+        />
+        <p
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl leading-loose"
+          style="padding-top: 20%;"
+        >
+          Keep track of your progress and earn achievements. Gamify your sport!
         </p>
       </div>
     </div>
