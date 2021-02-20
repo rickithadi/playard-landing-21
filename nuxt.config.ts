@@ -79,8 +79,12 @@ const nuxtConfig: Configuration = {
     '@nuxtjs/style-resources',
     '@nuxtjs/markdownit',
     'vue-social-sharing/nuxt',
+    '@nuxtjs/google-analytics',
   ],
 
+  googleAnalytics: {
+    id: 'G-BDNCS0PM08',
+  },
   markdownit: {
     preset: 'default',
 
