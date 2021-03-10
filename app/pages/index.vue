@@ -16,12 +16,17 @@
               @submit.prevent="handleSubmit"
               name="signups"
               netlify
+              netlify-honeypot="bot-field"
               class="flex items-center border-b border-b-2 border-blue-400 py-2"
             >
+              <p class="hidden">
+                <input name="bot-field" />
+              </p>
               <input
                 ref="emailInput"
                 v-model="form.email"
                 class="appearance-none mb-36 bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                required
                 type="text"
                 name="email"
                 placeholder="your@email.com"
