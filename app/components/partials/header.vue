@@ -13,17 +13,22 @@
             Blog
           </nuxt-link>
         </li>
-        <!-- <li>
-          <nuxt-link to="/contact" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
-            Contact
-          </nuxt-link>
-        </li> -->
         <li
           v-for="(page, index) in pages"
           :key="index"
           class="block font-medium px-4 py-1 md:p-2 lg:px-4"
         >
           <nuxt-link :to="`/${page.slug}`">{{ page.title }}</nuxt-link>
+        </li>
+
+        <li>
+          <button
+            class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+          >
+            <a href="https://app.playard.sg" target="_blank">
+              Log In
+            </a>
+          </button>
         </li>
       </ul>
     </nav>
