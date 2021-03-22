@@ -13,8 +13,68 @@
         name="contact"
         netlify
         netlify-honeypot="bot-field"
-        class="w-full max-w-sm"
-      ></form>
+        class="w-full max-w-lg"
+        lass="form bg-white p-6 my-10 relative"
+      >
+        <div
+          class="icon bg-blue-600 text-white w-6 h-6 absolute flex items-center justify-center p-5"
+          style="left: -40px;"
+        >
+          <i class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"></i>
+        </div>
+        <h3 class="text-2xl text-gray-900 font-semibold">Get in touch!</h3>
+        <p class="text-gray-600">To help you choose your property</p>
+        <div class="flex space-x-5 mt-3">
+          <input
+            type="text"
+            name=""
+            id=""
+            aria-label="playard"
+            placeholder="Your Name"
+            class="border p-2 w-1/2"
+          />
+          <input
+            aria-label="playard"
+            type="tel"
+            name=""
+            id=""
+            placeholder="Subject"
+            class="border p-2 w-1/2"
+          />
+        </div>
+        <input
+          aria-label="playard"
+          type="email"
+          name=""
+          id=""
+          placeholder="Your Email"
+          class="border p-2 w-full mt-3"
+        />
+        <textarea
+          name=""
+          id=""
+          aria-label="playard"
+          cols="10"
+          rows="3"
+          placeholder="Tell us about desired property"
+          class="border p-2 mt-3 w-full"
+        ></textarea>
+        <p class="font-bold text-sm mt-3">GDPR Agreement *</p>
+        <div class="flex items-baseline space-x-2 mt-2">
+          <input aria-label="playard" type="checkbox" name="" id="" class="inline-block" />
+          <p class="text-gray-600 text-sm">
+            I consent to having this website store my submitted information so they can respond to
+            my inquiry.
+          </p>
+        </div>
+
+        <button
+          class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
     </div>
   </section>
 </template>
