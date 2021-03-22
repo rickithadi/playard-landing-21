@@ -16,11 +16,12 @@
         style="left: -40px;"
       ></div>
       <h3 class="text-2xl text-gray-900 font-semibold">Get in touch!</h3>
-      <p class="text-gray-600">Happy to assist with enquiries</p>
+      <p class="text-gray-600">Alternatively email us at hello@playard.sg</p>
       <div class="flex space-x-5 mt-3">
         <input
           type="text"
           required
+          ref="nameInput"
           v-model="form.name"
           name="name"
           id=""
@@ -31,6 +32,7 @@
         <input
           aria-label="playard"
           type="text"
+          ref="subInput"
           name="subject"
           required
           v-model="form.subject"
@@ -54,6 +56,7 @@
         name="query"
         id=""
         aria-label="playard"
+        ref="queryInput"
         cols="10"
         rows="3"
         placeholder="How can we help?"
@@ -62,7 +65,7 @@
         class="border p-2 mt-3 w-full"
       ></textarea>
       <p class="font-bold text-sm mt-3">GDPR Agreement *</p>
-      <div class="flex items-baseline space-x-2 mt-2">
+      <div class="flex items-baseline space-x-2 mt-2 pb-5">
         <input aria-label="playard" type="checkbox" id="" class="inline-block" required />
         <p class="text-gray-600 text-sm">
           I consent to having this website store my submitted information so they can respond to my
