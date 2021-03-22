@@ -9,6 +9,7 @@
     <form v-else @submit.prevent="handleSubmit" name="contact" netlify netlify-honeypot="bot-field">
       <p class="hidden">
         <input name="bot-field" />
+        <input type="hidden" value="contact" name="contact" />
       </p>
 
       <div
@@ -24,7 +25,7 @@
           ref="nameInput"
           v-model="form.name"
           name="name"
-          id=""
+          id="name"
           aria-label="playard"
           placeholder="Your Name"
           class="border p-2 w-1/2"
@@ -36,7 +37,7 @@
           name="subject"
           required
           v-model="form.subject"
-          id=""
+          id="subject"
           placeholder="Subject"
           class="border p-2 w-1/2"
         />
@@ -47,14 +48,14 @@
           name="email"
           required
           v-model="form.email"
-          id=""
+          id="email"
           placeholder="Your Email"
           class="border p-2 w-1/2"
         />
       </div>
       <textarea
         name="query"
-        id=""
+        id="query"
         aria-label="playard"
         ref="queryInput"
         cols="10"
@@ -76,6 +77,7 @@
       <button
         class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded p-2"
         type="submit"
+        value="submit"
       >
         Submit
       </button>
@@ -109,12 +111,12 @@ export default class Contact extends Vue {
   }
 
   async handleSubmit(): Promise<void> {
-    console.log('fuc', this.form);
     if (!this.validEmail(this.form.email)) {
       this.$refs.emailInput.focus();
       return;
     }
 
+    console.log('fuc', this.form);
     try {
       await fetch('/', {
         method: 'POST',
