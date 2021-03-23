@@ -259,6 +259,83 @@
         </p>
       </div>
     </div>
+    <section class="contact">
+      <div class="mb-12 xl:mb-0">
+        <h4 v-if="isContacted">Thank you - we'll be in touch shortly.</h4>
+
+        <form
+          v-else
+          @submit.prevent="handleSubmitContact"
+          name="contact"
+          netlify
+          netlify-honeypot="bot-field"
+        >
+          <p class="hidden">
+            <input name="bot-field" />
+            <input type="hidden" value="contact" name="contact" />
+          </p>
+
+          <h3 class="text-2xl text-gray-900 font-semibold">Get in touch!</h3>
+          <p class="text-gray-600">Alternatively email us at hello@playard.sg</p>
+          <div class="flex space-x-5 mt-3">
+            <input
+              type="text"
+              required
+              v-model="contactForm.name"
+              name="name"
+              aria-label="playard"
+              placeholder="Your Name"
+              class="border p-2 w-1/2"
+            />
+            <input
+              aria-label="playard"
+              type="text"
+              name="subject"
+              required
+              v-model="contactForm.subject"
+              placeholder="Subject"
+              class="border p-2 w-1/2"
+            />
+            <input
+              aria-label="playard"
+              type="email"
+              ref="CemailInput"
+              name="email"
+              required
+              v-model="contactForm.email"
+              placeholder="Your Email"
+              class="border p-2 w-1/2"
+            />
+          </div>
+          <textarea
+            name="query"
+            id="query"
+            aria-label="playard"
+            cols="10"
+            rows="3"
+            placeholder="How can we help?"
+            required
+            v-model="contactForm.query"
+            class="border p-2 mt-3 w-full"
+          ></textarea>
+          <p class="font-bold text-sm mt-3">GDPR Agreement *</p>
+          <div class="flex items-baseline space-x-2 mt-2 pb-5">
+            <input aria-label="playard" type="checkbox" id="" class="inline-block" required />
+            <p class="text-gray-600 text-sm">
+              I consent to having this website store my submitted information so they can respond to
+              my inquiry.
+            </p>
+          </div>
+
+          <button
+            class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded p-2"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -284,6 +361,15 @@ export default class Home extends Vue {
   }
 
   isSignedUp = false;
+
+  isContacted = false;
+
+  contactForm = {
+    name: '',
+    email: '',
+    subject: '',
+    query: '',
+  };
 
   form = {
     email: '',
@@ -315,6 +401,25 @@ export default class Home extends Vue {
       });
 
       this.isSignedUp = true;
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  async handleSubmitContact(): Promise<void> {
+    if (!this.validEmail(this.contactForm.email)) {
+      this.$refs.CemailInput.focus();
+      return;
+    }
+
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({ 'form-name': 'contact', ...this.contactForm }),
+      });
+
+      this.isContacted = true;
     } catch (error) {
       console.error(error);
     }
