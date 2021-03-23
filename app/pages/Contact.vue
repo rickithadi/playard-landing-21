@@ -1,5 +1,5 @@
 <template>
-  <section class="page">
+  <section class="contact">
     <h1 class="page__title text-lg md:text-xl lg:text-4xl xl:text-6xl text-center py-8 md:py-16">
       Contact us
     </h1>
@@ -22,12 +22,11 @@
         <h3 class="text-2xl text-gray-900 font-semibold">Get in touch!</h3>
         <p class="text-gray-600">Alternatively email us at hello@playard.sg</p>
         <div class="flex space-x-5 mt-3">
-          <!--                <input
+          <input
             type="text"
             required
             v-model="form.name"
             name="name"
-            id="name"
             aria-label="playard"
             placeholder="Your Name"
             class="border p-2 w-1/2"
@@ -38,10 +37,9 @@
             name="subject"
             required
             v-model="form.subject"
-            id="subject"
             placeholder="Subject"
             class="border p-2 w-1/2"
-          />-->
+          />
           <input
             aria-label="playard"
             type="email"
@@ -49,7 +47,6 @@
             name="email"
             required
             v-model="form.email"
-            id="email"
             placeholder="Your Email"
             class="border p-2 w-1/2"
           />
@@ -86,8 +83,14 @@
 </template>
 
 <script lang="ts">
-import { Vue } from 'nuxt-property-decorator';
+import { Component, Vue } from 'nuxt-property-decorator';
 
+@Component({
+  // Called to know which transition to apply
+  transition() {
+    return 'slide-left';
+  },
+})
 export default class Contact extends Vue {
   form = {
     name: '',
