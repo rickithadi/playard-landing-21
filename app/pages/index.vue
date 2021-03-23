@@ -93,10 +93,10 @@
                 <dt class="text-lg leading-6 font-medium text-gray-900">
                   Connect to a global network of like minded players
                 </dt>
-                <dd class="mt-1 text-base text-gray-500">
+                <div class="mt-1 text-base text-gray-500">
                   Join a community of social sportsmen from all over the world. Compete, befriend
                   and connect.
-                </dd>
+                </div>
               </div>
             </div>
 

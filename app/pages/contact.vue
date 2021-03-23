@@ -22,10 +22,9 @@
         <h3 class="text-2xl text-gray-900 font-semibold">Get in touch!</h3>
         <p class="text-gray-600">Alternatively email us at hello@playard.sg</p>
         <div class="flex space-x-5 mt-3">
-          <input
+          <!--                <input
             type="text"
             required
-            ref="nameInput"
             v-model="form.name"
             name="name"
             id="name"
@@ -36,14 +35,13 @@
           <input
             aria-label="playard"
             type="text"
-            ref="subInput"
             name="subject"
             required
             v-model="form.subject"
             id="subject"
             placeholder="Subject"
             class="border p-2 w-1/2"
-          />
+          />-->
           <input
             aria-label="playard"
             type="email"
@@ -60,7 +58,6 @@
           name="query"
           id="query"
           aria-label="playard"
-          ref="queryInput"
           cols="10"
           rows="3"
           placeholder="How can we help?"
@@ -80,7 +77,6 @@
         <button
           class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded p-2"
           type="submit"
-          value="submit"
         >
           Submit
         </button>
@@ -94,8 +90,8 @@ import { Vue } from 'nuxt-property-decorator';
 
 export default class Contact extends Vue {
   form = {
-    email: '',
     name: '',
+    email: '',
     subject: '',
     query: '',
   };
