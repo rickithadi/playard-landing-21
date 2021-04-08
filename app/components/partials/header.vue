@@ -22,11 +22,12 @@
         </li>
 
         <li>
-          <button
-            class="bg-blue-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed"
+          <a
+            href="https://app.playard.sg"
+            class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
           >
             Log in
-          </button>
+          </a>
         </li>
       </ul>
     </nav>
