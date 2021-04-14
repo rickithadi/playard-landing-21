@@ -7,9 +7,17 @@
       >
         <div class="flex flex-col w-full xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
           <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
+          <!-- <div v-html="$md.render(welcomeText)" class="home__welcome markdown" /> -->
 
           <div class="mb-12 xl:mb-0">
-            <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
+            <a href="https://app.playard.sg">
+              <button
+                class="bg-white hover:bg-gray-100 text-blue-700 font-semibold py-2 px-4 border-2 border-blue-700 rounded shadow"
+              >
+                Get Started Today
+              </button>
+            </a>
+            <!-- <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
 
             <form
               v-else
@@ -39,7 +47,7 @@
               >
                 I'm keen
               </button>
-            </form>
+            </form> -->
           </div>
         </div>
         <div class="flex flex-col w-full xl:w-2/5">
