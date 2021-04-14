@@ -2,9 +2,9 @@
   "title": "Home",
   "titleTemplate": "| Playard",
   "welcomeText": "# Where you find sports kakis",
-  "logo": "/images/uploads/penguinf.svg",
-  "icon": "/images/uploads/penguinf.svg",
+  "logo": "/images/uploads/penguin-nobg.png",
+  "icon": "/images/uploads/penguin-nobg.png",
   "loadingColor": "#0b3765",
   "seoDescription": "Playard is where you find sports kakis",
-  "seoMetaImage": "/images/uploads/penguinf.svg"
+  "seoMetaImage": "/images/uploads/penguinbg.png"
 }
