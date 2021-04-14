@@ -1,10 +1,10 @@
 {
-    "title": "Home",
-    "titleTemplate": "| Playard",
-    "welcomeText": "# Where you find sports kakis",
-    "logo": "/images/uploads/playardpenguin.png",
-    "icon": "/images/uploads/playardpenguin.png",
-    "loadingColor": "#0b3765",
-    "seoDescription": "Playard is where you find sports kakis",
-    "seoMetaImage": "/images/uploads/playardPenguin.png"
+  "title": "Home",
+  "titleTemplate": "| Playard",
+  "welcomeText": "# Where you find sports kakis",
+  "logo": "/images/uploads/penguinf.svg",
+  "icon": "/images/uploads/penguinf.svg",
+  "loadingColor": "#0b3765",
+  "seoDescription": "Playard is where you find sports kakis",
+  "seoMetaImage": "/images/uploads/penguinf.svg"
 }
